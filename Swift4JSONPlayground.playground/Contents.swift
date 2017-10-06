@@ -1,8 +1,7 @@
-//: Playground - noun: a place where people can play
 
 import Foundation
 
-//basic example
+//: Basic example
 
 var jsonString = "{ \"id\": 15, \"name\": \"fifteen\" }"
 
@@ -26,7 +25,7 @@ do {
     print("error happened: \(error)")
 }
 
-//optional attribute
+//: Optional attribute
 
 jsonString = "{ \"id\": 15 }"
 
@@ -52,7 +51,7 @@ do {
     print("error happened: \(error)")
 }
 
-//different name in JSON and struct
+//: Different name in JSON and struct
 
 jsonString = "{ \"number_id\": 15, \"name\": \"fifteen\" }"
 
@@ -80,7 +79,7 @@ do {
     print("error happened: \(error)")
 }
 
-//different type in JSON and struct
+//: Different type in JSON and struct
 
 jsonString = "{ \"number_id\": \"15\", \"name\": \"fifteen\" }"
 
@@ -111,7 +110,7 @@ do {
     print("error happened: \(error)")
 }
 
-//nested JSON
+//: Nested JSON
 
 jsonString = "{ \"id\": 15, \"name\": \"fifteen\", \"children\": [{\"id\": 16, \"name\": \"sixteen\"}, {\"id\": 17, \"name\": \"seventeen\"}] }"
 
@@ -139,5 +138,3 @@ do {
 } catch let error {
     print("error happened: \(error)")
 }
-
-
